@@ -32,8 +32,15 @@ def main():
     t.color("green")
     t2 = turtle.Turtle()
     t2.color("red")
-    t.home()
-    t2.home()
+    t.penup()
+    t.forward(150)
+    t.right(90)
+    t.forward(100)
+    t.left(90)
+    t.pendown()
+    t2.penup()
+    t2.back(200)
+    t2.pendown()
     factorn, factorm = factor(driver)
 
     fn = int(factorn) / 100
